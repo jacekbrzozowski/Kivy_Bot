@@ -1,0 +1,84 @@
+<MyRoot>
+
+    chat_text: chat_text
+    message_text: message_text
+    send_btn: send_btn
+
+    orientation: 'vertical'
+            
+    Label:
+        text: "Chat History"
+        font_size: 42
+        height: 50
+        size_hint: (1, None) #szerokosc, wysokosc w przedziale 0-1 (0-100%)
+        color: 14/255, 89/255, 230/255, 1
+
+    TextInput:
+        id: chat_text
+        size_hint: (1, 0.8)
+        multiline: True
+        font_size: 36
+        readonly: True
+        disabled: True
+        background_normal: ''
+        background_disabled_normal: self.background_normal
+        background_color: 1,1,1,1
+        disabled_foreground_color: 0,0,0,1
+
+    Label:
+        text: "Your Message:"
+        font_size: 42
+        height: 50
+        size_hint: (1, None)
+        color: 14/255, 89/255, 230/255, 1
+
+    TextInput:
+        id: message_text
+        size_hint: (1,0.12)
+        font_size: 36
+        background_color: 1,1,1,1
+              
+
+    Button:
+        id: send_btn
+        text: "Send"
+        font_size: 32
+        size_hint: (1, 0.12)
+        #size: 100, 50
+        background_color: 14/255, 89/255, 230/255, 1
+        on_press: root.send_message()
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+    
+                
+                
+
+
+
